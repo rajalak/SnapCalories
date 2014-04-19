@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847C4EC11902F73200E2DCDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EC01902F73200E2DCDE /* Foundation.framework */; };
+		847C4EC31902F73200E2DCDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EC21902F73200E2DCDE /* CoreGraphics.framework */; };
+		847C4EC51902F73200E2DCDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EC41902F73200E2DCDE /* UIKit.framework */; };
+		847C4ECB1902F73200E2DCDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847C4EC91902F73200E2DCDE /* InfoPlist.strings */; };
+		847C4ECD1902F73200E2DCDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C4ECC1902F73200E2DCDE /* main.m */; };
+		847C4ED11902F73200E2DCDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C4ED01902F73200E2DCDE /* AppDelegate.m */; };
+		847C4ED41902F73200E2DCDE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847C4ED21902F73200E2DCDE /* Main_iPhone.storyboard */; };
+		847C4ED71902F73200E2DCDE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847C4ED51902F73200E2DCDE /* Main_iPad.storyboard */; };
+		847C4EDA1902F73200E2DCDE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C4ED91902F73200E2DCDE /* FirstViewController.m */; };
+		847C4EDD1902F73200E2DCDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C4EDC1902F73200E2DCDE /* SecondViewController.m */; };
+		847C4EDF1902F73200E2DCDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847C4EDE1902F73200E2DCDE /* Images.xcassets */; };
+		847C4EE61902F73200E2DCDE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EE51902F73200E2DCDE /* XCTest.framework */; };
+		847C4EE71902F73200E2DCDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EC01902F73200E2DCDE /* Foundation.framework */; };
+		847C4EE81902F73200E2DCDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847C4EC41902F73200E2DCDE /* UIKit.framework */; };
+		847C4EF01902F73200E2DCDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847C4EEE1902F73200E2DCDE /* InfoPlist.strings */; };
+		847C4EF21902F73200E2DCDE /* NutriliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C4EF11902F73200E2DCDE /* NutriliteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847C4EE91902F73200E2DCDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847C4EB51902F73100E2DCDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847C4EBC1902F73200E2DCDE;
+			remoteInfo = Nutrilite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		847C4EBD1902F73200E2DCDE /* Nutrilite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrilite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847C4EC01902F73200E2DCDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		847C4EC21902F73200E2DCDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		847C4EC41902F73200E2DCDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		847C4EC81902F73200E2DCDE /* Nutrilite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nutrilite-Info.plist"; sourceTree = "<group>"; };
+		847C4ECA1902F73200E2DCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		847C4ECC1902F73200E2DCDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		847C4ECE1902F73200E2DCDE /* Nutrilite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nutrilite-Prefix.pch"; sourceTree = "<group>"; };
+		847C4ECF1902F73200E2DCDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		847C4ED01902F73200E2DCDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		847C4ED31902F73200E2DCDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		847C4ED61902F73200E2DCDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		847C4ED81902F73200E2DCDE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		847C4ED91902F73200E2DCDE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		847C4EDB1902F73200E2DCDE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		847C4EDC1902F73200E2DCDE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		847C4EDE1902F73200E2DCDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		847C4EE41902F73200E2DCDE /* NutriliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847C4EE51902F73200E2DCDE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		847C4EED1902F73200E2DCDE /* NutriliteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NutriliteTests-Info.plist"; sourceTree = "<group>"; };
+		847C4EEF1902F73200E2DCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		847C4EF11902F73200E2DCDE /* NutriliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NutriliteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847C4EBA1902F73200E2DCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4EC31902F73200E2DCDE /* CoreGraphics.framework in Frameworks */,
+				847C4EC51902F73200E2DCDE /* UIKit.framework in Frameworks */,
+				847C4EC11902F73200E2DCDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847C4EE11902F73200E2DCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4EE61902F73200E2DCDE /* XCTest.framework in Frameworks */,
+				847C4EE81902F73200E2DCDE /* UIKit.framework in Frameworks */,
+				847C4EE71902F73200E2DCDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847C4EB41902F73100E2DCDE = {
+			isa = PBXGroup;
+			children = (
+				847C4EC61902F73200E2DCDE /* Nutrilite */,
+				847C4EEB1902F73200E2DCDE /* NutriliteTests */,
+				847C4EBF1902F73200E2DCDE /* Frameworks */,
+				847C4EBE1902F73200E2DCDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847C4EBE1902F73200E2DCDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847C4EBD1902F73200E2DCDE /* Nutrilite.app */,
+				847C4EE41902F73200E2DCDE /* NutriliteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847C4EBF1902F73200E2DCDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847C4EC01902F73200E2DCDE /* Foundation.framework */,
+				847C4EC21902F73200E2DCDE /* CoreGraphics.framework */,
+				847C4EC41902F73200E2DCDE /* UIKit.framework */,
+				847C4EE51902F73200E2DCDE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		847C4EC61902F73200E2DCDE /* Nutrilite */ = {
+			isa = PBXGroup;
+			children = (
+				847C4ECF1902F73200E2DCDE /* AppDelegate.h */,
+				847C4ED01902F73200E2DCDE /* AppDelegate.m */,
+				847C4ED21902F73200E2DCDE /* Main_iPhone.storyboard */,
+				847C4ED51902F73200E2DCDE /* Main_iPad.storyboard */,
+				847C4ED81902F73200E2DCDE /* FirstViewController.h */,
+				847C4ED91902F73200E2DCDE /* FirstViewController.m */,
+				847C4EDB1902F73200E2DCDE /* SecondViewController.h */,
+				847C4EDC1902F73200E2DCDE /* SecondViewController.m */,
+				847C4EDE1902F73200E2DCDE /* Images.xcassets */,
+				847C4EC71902F73200E2DCDE /* Supporting Files */,
+			);
+			path = Nutrilite;
+			sourceTree = "<group>";
+		};
+		847C4EC71902F73200E2DCDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				847C4EC81902F73200E2DCDE /* Nutrilite-Info.plist */,
+				847C4EC91902F73200E2DCDE /* InfoPlist.strings */,
+				847C4ECC1902F73200E2DCDE /* main.m */,
+				847C4ECE1902F73200E2DCDE /* Nutrilite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		847C4EEB1902F73200E2DCDE /* NutriliteTests */ = {
+			isa = PBXGroup;
+			children = (
+				847C4EF11902F73200E2DCDE /* NutriliteTests.m */,
+				847C4EEC1902F73200E2DCDE /* Supporting Files */,
+			);
+			path = NutriliteTests;
+			sourceTree = "<group>";
+		};
+		847C4EEC1902F73200E2DCDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				847C4EED1902F73200E2DCDE /* NutriliteTests-Info.plist */,
+				847C4EEE1902F73200E2DCDE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847C4EBC1902F73200E2DCDE /* Nutrilite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847C4EF51902F73200E2DCDE /* Build configuration list for PBXNativeTarget "Nutrilite" */;
+			buildPhases = (
+				847C4EB91902F73200E2DCDE /* Sources */,
+				847C4EBA1902F73200E2DCDE /* Frameworks */,
+				847C4EBB1902F73200E2DCDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nutrilite;
+			productName = Nutrilite;
+			productReference = 847C4EBD1902F73200E2DCDE /* Nutrilite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847C4EE31902F73200E2DCDE /* NutriliteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847C4EF81902F73200E2DCDE /* Build configuration list for PBXNativeTarget "NutriliteTests" */;
+			buildPhases = (
+				847C4EE01902F73200E2DCDE /* Sources */,
+				847C4EE11902F73200E2DCDE /* Frameworks */,
+				847C4EE21902F73200E2DCDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847C4EEA1902F73200E2DCDE /* PBXTargetDependency */,
+			);
+			name = NutriliteTests;
+			productName = NutriliteTests;
+			productReference = 847C4EE41902F73200E2DCDE /* NutriliteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847C4EB51902F73100E2DCDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "General Software";
+				TargetAttributes = {
+					847C4EE31902F73200E2DCDE = {
+						TestTargetID = 847C4EBC1902F73200E2DCDE;
+					};
+				};
+			};
+			buildConfigurationList = 847C4EB81902F73100E2DCDE /* Build configuration list for PBXProject "Nutrilite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847C4EB41902F73100E2DCDE;
+			productRefGroup = 847C4EBE1902F73200E2DCDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847C4EBC1902F73200E2DCDE /* Nutrilite */,
+				847C4EE31902F73200E2DCDE /* NutriliteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847C4EBB1902F73200E2DCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4ED71902F73200E2DCDE /* Main_iPad.storyboard in Resources */,
+				847C4EDF1902F73200E2DCDE /* Images.xcassets in Resources */,
+				847C4ED41902F73200E2DCDE /* Main_iPhone.storyboard in Resources */,
+				847C4ECB1902F73200E2DCDE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847C4EE21902F73200E2DCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4EF01902F73200E2DCDE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847C4EB91902F73200E2DCDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4EDD1902F73200E2DCDE /* SecondViewController.m in Sources */,
+				847C4ED11902F73200E2DCDE /* AppDelegate.m in Sources */,
+				847C4EDA1902F73200E2DCDE /* FirstViewController.m in Sources */,
+				847C4ECD1902F73200E2DCDE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847C4EE01902F73200E2DCDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847C4EF21902F73200E2DCDE /* NutriliteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847C4EEA1902F73200E2DCDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847C4EBC1902F73200E2DCDE /* Nutrilite */;
+			targetProxy = 847C4EE91902F73200E2DCDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847C4EC91902F73200E2DCDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847C4ECA1902F73200E2DCDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		847C4ED21902F73200E2DCDE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847C4ED31902F73200E2DCDE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		847C4ED51902F73200E2DCDE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847C4ED61902F73200E2DCDE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		847C4EEE1902F73200E2DCDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847C4EEF1902F73200E2DCDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847C4EF31902F73200E2DCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		847C4EF41902F73200E2DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847C4EF61902F73200E2DCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nutrilite/Nutrilite-Prefix.pch";
+				INFOPLIST_FILE = "Nutrilite/Nutrilite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		847C4EF71902F73200E2DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nutrilite/Nutrilite-Prefix.pch";
+				INFOPLIST_FILE = "Nutrilite/Nutrilite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		847C4EF91902F73200E2DCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nutrilite.app/Nutrilite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nutrilite/Nutrilite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NutriliteTests/NutriliteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		847C4EFA1902F73200E2DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nutrilite.app/Nutrilite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nutrilite/Nutrilite-Prefix.pch";
+				INFOPLIST_FILE = "NutriliteTests/NutriliteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847C4EB81902F73100E2DCDE /* Build configuration list for PBXProject "Nutrilite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847C4EF31902F73200E2DCDE /* Debug */,
+				847C4EF41902F73200E2DCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847C4EF51902F73200E2DCDE /* Build configuration list for PBXNativeTarget "Nutrilite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847C4EF61902F73200E2DCDE /* Debug */,
+				847C4EF71902F73200E2DCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		847C4EF81902F73200E2DCDE /* Build configuration list for PBXNativeTarget "NutriliteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847C4EF91902F73200E2DCDE /* Debug */,
+				847C4EFA1902F73200E2DCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847C4EB51902F73100E2DCDE /* Project object */;
+}
