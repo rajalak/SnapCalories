@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPlotChart.h"
+#import "JSON.h"
 
 @interface FirstViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *caloriesRemainLabel;
+@property (strong, nonatomic) IBOutlet UILabel *goalLabel;
+@property (strong, nonatomic) IBOutlet UILabel *intakeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *burnedLabel;
+@property (strong, nonatomic) IBOutlet UILabel *netLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 @end

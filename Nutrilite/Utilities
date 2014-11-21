@@ -1,0 +1,20 @@
+-(void)setRootController:(UIViewController*)controller
+              storyboard:(UIStoryboard*)storyboard{
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [UIView
+     transitionWithView:appDelegate.window
+     duration:2.5
+     options:UIViewAnimationOptionTransitionCrossDissolve
+     animations:^(void) {
+         BOOL oldState = [UIView areAnimationsEnabled];
+         
+         [UIView setAnimationsEnabled:NO];
+         
+         appDelegate.window.rootViewController = controller;
+         
+         [UIView setAnimationsEnabled:oldState];
+     }
+     completion:nil];
+}
