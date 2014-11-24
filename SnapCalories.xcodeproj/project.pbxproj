@@ -44,7 +44,6 @@
 		84637A0F191434C7005935E5 /* RegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84637A0E191434C7005935E5 /* RegisterTableViewController.m */; };
 		8463AED7191F4F8F00AE480A /* AteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AED6191F4F8F00AE480A /* AteTableViewController.m */; };
 		8466F2DF193B030400515AA7 /* AteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8466F2DE193B030400515AA7 /* AteTableViewCell.m */; };
-		846DF06419481219001E4E2B /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846DF06319481219001E4E2B /* SettingsTableViewController.m */; };
 		846DF06919483583001E4E2B /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 846DF06819483583001E4E2B /* grid.png */; };
 		846DF07D1948359B001E4E2B /* flash-auto.png in Resources */ = {isa = PBXBuildFile; fileRef = 846DF06A1948359B001E4E2B /* flash-auto.png */; };
 		846DF07E1948359B001E4E2B /* flash-auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846DF06B1948359B001E4E2B /* flash-auto@2x.png */; };
@@ -112,6 +111,7 @@
 		849CD85D19183A6500BF54A9 /* SnapCal768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 849CD85A19183A6500BF54A9 /* SnapCal768x1024.png */; };
 		84F6E2D5191FDC6E0053E9D6 /* RegisterAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6E2D4191FDC6E0053E9D6 /* RegisterAccountTableViewController.m */; };
 		84F6E31F19203D210053E9D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6E31E19203D210053E9D6 /* Security.framework */; };
+		E76EC3991A2058DD00FECD30 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76EC3981A2058DD00FECD30 /* SettingsViewController.m */; };
 		E79936A319BE6875000A2973 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79936A219BE6875000A2973 /* SearchViewController.m */; };
 		E7C0982E19BFC0BC00E78679 /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C0982D19BFC0BC00E78679 /* FoodDetailViewController.m */; };
 		E7C124041A1BD84100DC95DD /* ExerciseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C124031A1BD84100DC95DD /* ExerciseSearchViewController.m */; };
@@ -180,8 +180,6 @@
 		8466F2DB193AD96400515AA7 /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 		8466F2DD193B030400515AA7 /* AteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AteTableViewCell.h; sourceTree = "<group>"; };
 		8466F2DE193B030400515AA7 /* AteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AteTableViewCell.m; sourceTree = "<group>"; };
-		846DF06219481219001E4E2B /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
-		846DF06319481219001E4E2B /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		846DF06819483583001E4E2B /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 		846DF06A1948359B001E4E2B /* flash-auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-auto.png"; sourceTree = "<group>"; };
 		846DF06B1948359B001E4E2B /* flash-auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-auto@2x.png"; sourceTree = "<group>"; };
@@ -263,6 +261,8 @@
 		84F6E2D3191FDC6E0053E9D6 /* RegisterAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountTableViewController.h; sourceTree = "<group>"; };
 		84F6E2D4191FDC6E0053E9D6 /* RegisterAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountTableViewController.m; sourceTree = "<group>"; };
 		84F6E31E19203D210053E9D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E76EC3971A2058DD00FECD30 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E76EC3981A2058DD00FECD30 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		E79936A119BE6875000A2973 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		E79936A219BE6875000A2973 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		E7C0982C19BFC0BC00E78679 /* FoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailViewController.h; sourceTree = "<group>"; };
@@ -328,6 +328,7 @@
 		8430D7F21920A102005947A6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E76EC3961A2058C200FECD30 /* Settings */,
 				E7C123FF1A1BD6EA00DC95DD /* Exercise */,
 				166E899319A6745700FEA785 /* Search */,
 				846DF06019481106001E4E2B /* Application */,
@@ -511,15 +512,6 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
-		846DF061194811A2001E4E2B /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				846DF06219481219001E4E2B /* SettingsTableViewController.h */,
-				846DF06319481219001E4E2B /* SettingsTableViewController.m */,
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
 		846E162A193BB44B001EE651 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,9 +610,17 @@
 				8430D7F21920A102005947A6 /* Main */,
 				8430D7F81920A283005947A6 /* Summary */,
 				8430D7F71920A21C005947A6 /* Ate */,
-				846DF061194811A2001E4E2B /* Settings */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E76EC3961A2058C200FECD30 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E76EC3971A2058DD00FECD30 /* SettingsViewController.h */,
+				E76EC3981A2058DD00FECD30 /* SettingsViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		E7C123FF1A1BD6EA00DC95DD /* Exercise */ = {
@@ -862,10 +862,10 @@
 				846E1639193C4E80001EE651 /* AtePickerViewController.m in Sources */,
 				E7D0CE5519D0E3E10034EFA2 /* MealSummaryViewController.m in Sources */,
 				8431A533191ADE9C00436EB5 /* SBJSON.m in Sources */,
-				846DF06419481219001E4E2B /* SettingsTableViewController.m in Sources */,
 				8463AED7191F4F8F00AE480A /* AteTableViewController.m in Sources */,
 				E79936A319BE6875000A2973 /* SearchViewController.m in Sources */,
 				E7C124071A1BFE3B00DC95DD /* ExerciseDetailViewController.m in Sources */,
+				E76EC3991A2058DD00FECD30 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

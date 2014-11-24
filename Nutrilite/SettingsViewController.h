@@ -1,12 +1,14 @@
 //
-//  SettingsTableViewController.h
+//  SettingsViewController.h
 //  SnapCalories
 //
-//  Created by Sys Admin on 6/10/14.
+//  Created by Sindu on 11/21/14.
 //  Copyright (c) 2014 General Software. All rights reserved.
 //
 
-@interface SettingsTableViewController : UITableViewController
+#import <UIKit/UIKit.h>
+
+@interface SettingsViewController : UITableViewController
 
 @property(nonatomic, strong) NSIndexPath *selectedIndexPath;
 
@@ -26,3 +28,4 @@
 
 
 @end
+

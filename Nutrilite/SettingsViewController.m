@@ -1,20 +1,19 @@
 //
-//  SettingsTableViewController.m
+//  SettingsViewController.m
 //  SnapCalories
 //
-//  Created by Sys Admin on 6/10/14.
+//  Created by Sindu on 11/21/14.
 //  Copyright (c) 2014 General Software. All rights reserved.
 //
 
-#import "SettingsTableViewController.h"
-
+#import "SettingsViewController.h"
 static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/servlet/";
 
-@interface SettingsTableViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation SettingsTableViewController
+@implementation SettingsViewController
 
 @synthesize selectedIndexPath, caloriesSlider, caloriesLabel, weightSlider, weightLabel, tableViewPA;
 
@@ -55,15 +54,15 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
 #pragma mark - Table View
 
 /*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell* cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    
-    if (selectedIndexPath.row==indexPath.row) {
-        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
-    }
-    
-    return cell;
-}*/
+ {
+ UITableViewCell* cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+ 
+ if (selectedIndexPath.row==indexPath.row) {
+ [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+ }
+ 
+ return cell;
+ }*/
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -72,7 +71,7 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
         [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
         selectedIndexPath=[indexPath copy];
         [self updateSettingsServer];
-     }
+    }
 }
 
 #pragma mark - Logout
@@ -143,7 +142,7 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
                                  @"weight" : [NSString stringWithFormat:@"%d", weight],
                                  @"lifestyle" : lifestyle,
                                  @"token" : [[DataModel sharedInstance] userToken]
-                                };
+                                 };
     
     AFHTTPRequestOperationManager* manager = [AFHTTPRequestOperationManager manager];
     
@@ -156,27 +155,27 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
          }
          failure:^(AFHTTPRequestOperation* operation, NSError* error) {
          }];
-
+    
 }
 
 #pragma mark - Database
 
 -(void)selectSettings
 {
-   /* __block NSMutableArray* result = [NSMutableArray array];
-
-    [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
-    
-        FMResultSet *resultSet = [db executeQuery:@"select * from goal;"];
-    
-        while ([resultSet next]) {
-            NSDictionary *dictionary = [resultSet resultDictionary];
-            [result addObject:[dictionary copy]];
-        }
-        [resultSet close];
-    }];
-    
-    NSDictionary* record = [result firstObject];*/
+    /* __block NSMutableArray* result = [NSMutableArray array];
+     
+     [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
+     
+     FMResultSet *resultSet = [db executeQuery:@"select * from goal;"];
+     
+     while ([resultSet next]) {
+     NSDictionary *dictionary = [resultSet resultDictionary];
+     [result addObject:[dictionary copy]];
+     }
+     [resultSet close];
+     }];
+     
+     NSDictionary* record = [result firstObject];*/
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
@@ -192,8 +191,8 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
       parameters:parameters
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              
-             NSDictionary* data = [responseObject copy];             
-      
+             NSDictionary* data = [responseObject copy];
+             
              NSDictionary* settingsArray = [data objectForKey:@"settings"];
              NSString *lifestyle;
              
@@ -207,62 +206,60 @@ static NSString * const BaseURLString = @"https://www.nutrihand.com/Nutrihand/se
              if ([lifestyle  isEqual: @"moderate"]) physicalActivity = 3;
              if ([lifestyle  isEqual: @"veryActive"]) physicalActivity = 2;
              if ([lifestyle  isEqual: @"extraActive"]) physicalActivity = 4;
-
-            //set Calories
-    
+             
+             //set Calories
+             
              NSUInteger totalCalories = self.caloriesSlider.value;
              NSString* goal = [NSString stringWithFormat:@"%d Cal",totalCalories];
              caloriesLabel.text = goal;
-    
+             
              //set Weight
-    
+             
              NSUInteger totalWeight = self.weightSlider.value;
              NSString* weight = [NSString stringWithFormat:@"%d lbs",totalWeight];
              weightLabel.text = weight;
-    
+             
              //Physical activity
              
              selectedIndexPath = [NSIndexPath indexPathForRow:physicalActivity inSection:2];
              
-            
+             
              UITableViewCell* cell = [[super tableView] cellForRowAtIndexPath:selectedIndexPath];
              [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
              
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              
-              
+             
          }
      ];
-
+    
 }
 
 /*- (void)updateCaloriesLocal:(NSString*)goal
-{
-    [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
-        
-        [db executeUpdate:@"update goal set calories = ? ", goal];
-        
-    }];
-}
-
-- (void)updateWeightLocal:(NSString*)weight
-{
-    [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
-        
-        [db executeUpdate:@"update goal set weight = ? ", weight];
-        
-    }];
-}
-
-- (void)updatePhysicalActivity:(NSString*)physicalActivity
-{
-    [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
-        
-        [db executeUpdate:@"update goal set physicalActivity = ? ", physicalActivity];
-        
-    }];
-}*/
-
-
+ {
+ [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
+ 
+ [db executeUpdate:@"update goal set calories = ? ", goal];
+ 
+ }];
+ }
+ 
+ - (void)updateWeightLocal:(NSString*)weight
+ {
+ [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
+ 
+ [db executeUpdate:@"update goal set weight = ? ", weight];
+ 
+ }];
+ }
+ 
+ - (void)updatePhysicalActivity:(NSString*)physicalActivity
+ {
+ [[DataModel sharedInstance] executeStatement:^(FMDatabase* db) {
+ 
+ [db executeUpdate:@"update goal set physicalActivity = ? ", physicalActivity];
+ 
+ }];
+ }*/
 
 @end
